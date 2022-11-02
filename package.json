@@ -1,0 +1,42 @@
+{
+  "name": "magic-balls",
+  "version": "0.1.0",
+  "description": "Desktop game - Magic balls",
+  "main": "boot/main.js",
+  "author": "jlavrin",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "electron .",
+    "dev": "cross-env NODE_ENV=development concurrently \"yarn dev:vite --host\" \"yarn dev:electron\"",
+    "dev:electron": "electron .",
+    "dev:vite": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.22",
+    "@types/react-dom": "18.0.7",
+    "@types/styled-components": "5.1.26",
+    "@vitejs/plugin-react": "2.2.0",
+    "electron": "21.2.1",
+    "typescript": "4.6.4",
+    "vite": "3.1.8"
+  },
+  "dependencies": {
+    "@emotion/react": "11.8.2",
+    "@emotion/styled": "11.10.5",
+    "@mui/material": "5.10.12",
+    "@mui/styled-engine": "5.10.8",
+    "@mui/styled-engine-sc": "5.10.6",
+    "@tanstack/react-query": "4.14.1",
+    "concurrently": "7.5.0",
+    "cross-env": "7.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.4.3",
+    "styled-components": "5.3.3",
+    "vite-tsconfig-paths": "3.5.2",
+    "zustand": "4.1.4"
+  }
+}
