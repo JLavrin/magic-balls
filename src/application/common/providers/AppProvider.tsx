@@ -8,6 +8,7 @@ import GlobalStyle from 'src/application/common/GlobalStyle'
 const AppProvider: FunctionComponent<PropsWithChildren> = ({ children }) => (
  <StyledThemeProvider theme={theme}>
    <MaterialThemeProvider theme={theme}>
+    <GlobalStyle />
     {children}
    </MaterialThemeProvider>
  </StyledThemeProvider>

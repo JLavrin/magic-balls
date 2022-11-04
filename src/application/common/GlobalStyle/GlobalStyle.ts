@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     
-    background-color: ${theme.colors.alabaster};
+    background-color: ${theme.colors.blue100};
     font-size: 40px;
   }
 `

@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import routesMapper from 'src/application/common/Router/utils/routesMapper'
 
 const ViteRouter: FunctionComponent = () => {
-  const routes = routesMapper(import.meta.globEager('/src/pages/**/[a-z]*.tsx'))
+  const routes = routesMapper(import.meta.globEager('/src/views/**/[a-z]*.tsx'))
 
   return (
     <Routes>
